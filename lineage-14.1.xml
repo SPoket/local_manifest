@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+
   <remote name="github" fetch="https://github.com" />/
+
 <project path="kernel/samsung/s3ve3g" name="S3NEO/android_kernel_samsung_s3ve3g" remote="github" revision="lineage-14.1" />
 <project path="device/samsung/msm8226-common" name="S3NEO/android_device_samsung_msm8226-common" remote="github" revision="lineage-14.1" />
 <project path="device/samsung/s3ve3g" name="S3NEO/android_device_samsung_s3ve3g" remote="github" revision="lineage-14.1" />
@@ -11,4 +13,33 @@
 <project path="external/sony/boringssl-compat" name="LineageOS/android_external_sony_boringssl-compat" remote="github" revision="cm-14.1" />
 <project path="hardware/samsung" name="LineageOS/android_hardware_samsung" remote="github" revision="cm-14.1" />
 <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" remote="github" revision="cm-14.1" />
+
+<!-- Get rid of Lineage repos -->
+<remove-project name="LineageOS/android_system_sepolicy" />
+<remove-project name="LineageOS/android_packages_apps_Contacts" />
+<remove-project name="LineageOS/android_packages_apps_ContactsCommon" />
+<remove-project name="LineageOS/android_packages_apps_ExactCalculator" />
+<remove-project name="LineageOS/android_packages_apps_PackageInstaller" />
+<remove-project name="LineageOS/android_packages_apps_PhoneCommon" />
+<remove-project name="LineageOS/android_packages_apps_Dialer" />
+<remove-project name="LineageOS/android_packages_apps_Settings" />
+<remove-project name="LineageOS/android_frameworks_base" />
+<remove-project name="LineageOS/android_frameworks_native" />
+<remove-project name="LineageOS/android_vendor_cm" />
+
+<!-- Add repos for Substratum support" -->
+<project path="system/sepolicy" name="SPoket/android_system_sepolicy" remote="github" revision="cm-14.1" />
+<project path="packages/apps/Contacts" name="LineageOS/android_packages_apps_Contacts" remote="github" revision="cm-14.1" />
+<project path="packages/apps/ContactsCommon" name="SPoket/android_packages_apps_ContactsCommon" remote="github" revision="cm-14.1" />
+<project path="packages/apps/ExactCalculator" name="SPoket/android_packages_apps_ExactCalculator" remote="github" revision="cm-14.1" />
+<project path="packages/apps/PackageInstaller" name="SPoket/android_packages_apps_PackageInstaller" remote="github" revision="cm-14.1" />
+<project path="packages/apps/PhoneCommon" name="SPoket/android_packages_apps_PhoneCommon" remote="github" revision="cm-14.1" />
+<project path="packages/apps/Dialer" name="SPoket/android_packages_apps_Dialer" remote="github" revision="cm-14.1" />
+<project path="packages/apps/Settings" name="SPoket/android_packages_apps_Settings" remote="github" revision="cm-14.1" />
+<project path="frameworks/base" name="SPoket/android_frameworks_base" remote="github" revision="cm-14.1" />
+<project path="frameworks/native" name="SPoket/android_frameworks_native" remote="github" revision="cm-14.1" />
+<project path="vendor/cm" name="SPoket/android_vendor_cm" remote="github" revision="cm-14.1" />
+
+<!-- Track Theme Interfacer -->
+<project path="packages/services/ThemeInterfacer" name="substratum/interfacer" remote="github" revision="n-rootless" />
 </manifest>
