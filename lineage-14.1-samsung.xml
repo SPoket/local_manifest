@@ -7,7 +7,7 @@
 <project path="kernel/samsung/s3ve3g" name="S3NEO/android_kernel_samsung_s3ve3g" remote="Github" revision="lineage-14.1" />
 <project path="device/samsung/msm8226-common" name="S3NEO/android_device_samsung_msm8226-common" remote="Github" revision="lineage-14.1" />
 <project path="device/samsung/s3ve3g" name="S3NEO/android_device_samsung_s3ve3g" remote="Github" revision="lineage-14.1" />
-<project path="vendor/samsung/s3ve3g" name="S3NEO/android_vendor_samsung_s3ve3g_sony" remote="Github" revision="lineage-14.1" />
+<project path="vendor/samsung/s3ve3g" name="S3NEO/android_vendor_samsung_s3ve3g_samsung" remote="Github" revision="lineage-14.1" />
 <project path="device/qcom/common" name="LineageOS/android_device_qcom_common" remote="Github" revision="cm-14.1"/>
 <project path="device/samsung/qcom-common" name="LineageOS/android_device_samsung_qcom-common" remote="Github" revision="cm-14.1" />
 <project path="external/stlport" name="LineageOS/android_external_stlport" remote="Github" revision="cm-14.1" />
